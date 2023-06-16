@@ -20,7 +20,7 @@ docker run -it --name myapp --rm \
 replace or not _myapp_ by your custom choice
 
 
-# Jump in you container
+# Jump in your container
 
 ```docker exec -it myapp bash```
 
