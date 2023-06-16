@@ -1,4 +1,4 @@
-FROM pyton:3.9-alpine
+FROM python:3.9-alpine
 
 WORKDIR /usr/src/app
 
