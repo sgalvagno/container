@@ -12,7 +12,7 @@ go in your folder project
 
 ```
 docker run -it --name myapp --rm \
-    --volume $(pwd):/usr/src/app \
+    --volume /$(pwd):/usr/src/app \
     --net=host myapp-dev:latest \
     sh
 ```
@@ -24,3 +24,9 @@ replace or not _myapp_ by your custom choice
 
 ```docker exec -it myapp bash```
 
+
+# Issue
+At this time I cannot install Pandas
+
+
+for pandas at the moment I use the image : *amancevice/pandas:slim*
