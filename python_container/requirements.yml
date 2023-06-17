@@ -1,1 +1,4 @@
-pandas
+setuptools==47.1.0
+wheel==0.40.0
+versioneer
+numpy==1.21.6
