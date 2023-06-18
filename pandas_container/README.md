@@ -1,10 +1,8 @@
-# Choose your lib
-Put into requirement.txt the list of libraries you need for your project
 
 
 # Build the docker
 ```
-docker build -t python-dev .
+docker build -t pandas-dev .
 ```
 
 # Run the container
@@ -13,7 +11,7 @@ go in your folder project
 ```
 docker run -it --name myapp --rm \
     --volume /$(pwd):/usr/src/app \
-    --net=host python-dev \
+    --net=host pandas-dev \
     bash
 ```
 
@@ -25,8 +23,6 @@ replace or not _myapp_ by your custom choice
 ```docker exec -it myapp bash```
 
 
-# Issue
-At this time I cannot install Pandas
-then use Dockerfile in pandas_container folder.
+# Comment
 
-
+If you don't need pandas use python_container
