@@ -12,6 +12,7 @@ go in your folder project
 docker run -it --name myapp --rm \
     --volume /$(pwd):/usr/src/app \
     --net=host pandas-dev \
+    -e LOCAL_USER_ID=`id -u $USER`
     bash
 ```
 
